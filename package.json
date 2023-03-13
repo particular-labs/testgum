@@ -1,8 +1,7 @@
 {
-  "name": "@vehler/testgum",
+  "name": "@particular-labs/testgum",
   "version": "0.1.0",
   "main": "index.js",
-  "repository": "git@github.com:vehler/testgum.git",
-  "author": "Lennick Velez <lennick.velez@gmail.com>",
+  "repository": "git@github.com:particular-labs/testgum.git",
   "license": "MIT"
 }
