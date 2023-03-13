@@ -7,7 +7,6 @@ on:
 
 jobs:
     publish-gpr:
-        needs: [lint, test]
         runs-on: ubuntu-latest
         steps:
             - name: Checkout branch
