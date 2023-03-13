@@ -33,4 +33,4 @@ jobs:
             - name: Publish to GitHub Package Registry
               run: yarn publish --access restricted
               env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_SECRET }}
+                  NPM_TOKEN: ${{ secrets.NPM_SECRET }}
