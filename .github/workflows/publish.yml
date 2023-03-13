@@ -6,7 +6,8 @@ on:
             - '*'
 
 jobs:
-    publish-gpr:
+    publish:
+        name: 'Publish to NPM Registry'
         runs-on: ubuntu-latest
         steps:
             - name: Checkout branch
@@ -30,6 +31,6 @@ jobs:
               run: yarn build
 
             - name: Publish to GitHub Package Registry
-              run: yarn npm publish
+              run: yarn publish --access restricted
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_SECRET }}

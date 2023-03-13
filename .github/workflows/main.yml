@@ -9,6 +9,7 @@ on:
 
 jobs:
     lint:
+        name: 'Lint Package'
         runs-on: ubuntu-latest
         steps:
             - name: Checkout branch
@@ -32,22 +33,23 @@ jobs:
               run: yarn lint
 
     test:
+        name: 'Test Package'
         runs-on: ubuntu-latest
         needs: lint
         steps:
             - name: Checkout branch
               uses: actions/checkout@v3
 
-            - name: Install Yarn
-              uses: DerYeger/yarn-setup-action@master
-              with:
-                  node-version: 16.x
-
             - name: Setup Node
               uses: actions/setup-node@v3
               with:
                   node-version: 16.x
                   cache: 'yarn'
+
+            - name: Install Yarn
+              uses: DerYeger/yarn-setup-action@master
+              with:
+                  node-version: 16.x
 
             - name: Install Dependencies
               run: yarn install --frozen-lockfile
