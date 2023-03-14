@@ -5,6 +5,9 @@
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
     "repository": "git@github.com:particular-labs/testgum.git",
+    "files": [
+        "dist"
+    ],
     "license": "MIT",
     "scripts": {
         "dev": "vitest",
