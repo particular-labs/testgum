@@ -1,6 +1,6 @@
 {
     "name": "@particular-labs/testgum",
-    "version": "0.1.0",
+    "version": "0.1.7",
     "main": "index.js",
     "repository": "git@github.com:particular-labs/testgum.git",
     "license": "MIT",
