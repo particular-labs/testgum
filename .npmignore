@@ -1,1 +1,10 @@
+/node_modules
+/src
 /playground
+/.github
+.npmignore
+.gitignore
+/.vscode
+.tsconfig.json
+.eslintrc.json
+.prettierrc.json
